@@ -9,7 +9,6 @@ public class Array {
         items=new int[length]; //initialization
     }
 
-    //insert
     public void insert(int x){
 
         if (items.length==count) { //if the array is full,resize
@@ -23,12 +22,20 @@ public class Array {
         }
 
         //add the item to the last
-        //items[count]=x; count++;//count value is 0 initially
+            //items[count]=x; count++;//count value is 0 initially
         items[count++]=x;
 
     }
-    //removeAt
-    public void removeAt(int x){
+
+    public void removeAt(int index){
+
+        if (index < 0 || index >= count )
+            throw new IllegalArgumentException();
+        //shift items to the left
+        for (int i = index; i < count; i++)
+            items[i]=items[i+1];
+
+        count--;
 
     }
     //print

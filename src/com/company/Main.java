@@ -16,6 +16,7 @@ public class Main {
         arr.insert(20);
         arr.insert(60);
         arr.insert(80);
+        arr.removeAt(3);
         arr.print();
     }
 }
