@@ -16,6 +16,7 @@ public class Main {
         arr.insert(20);
         arr.insert(60);
         arr.insert(80);
+        System.out.println(arr.indexOf(20));
         arr.removeAt(3);
         arr.print();
     }

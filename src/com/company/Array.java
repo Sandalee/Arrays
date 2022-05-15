@@ -44,6 +44,15 @@ public class Array {
         for (int i=0; i< count;i++)
             System.out.println(items[i]);
     }
+
     //indexOf
+    public int indexOf(int item){
+        for (int i = 0; i < count; i++)
+            if (items[i]==item)
+                return i;
+
+        return -1;
+
+    }
 
 }
