@@ -2,7 +2,7 @@ package com.company;
 
 public class Array {
     private int[] items; //only visible to the class
-    private int count;
+    private int count; //to keep track of the length
 
     //constructor
     public Array(int length){
