@@ -11,8 +11,20 @@ public class Array {
 
     //insert
     public void insert(int x){
-        //if the array is full,resize
+
+        if (items.length==count) { //if the array is full,resize
+            int[] newItems=new int[count*2];//create new array, 2x
+
+            for (int i = 0; i < count; i++) //copy the elements into the new array
+                newItems[i]=items[i];
+
+            //set 'items' to the new array
+            items=newItems;
+        }
+
         //add the item to the last
+        //items[count]=x; count++;//count value is 0 initially
+        items[count++]=x;
 
     }
     //removeAt

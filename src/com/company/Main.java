@@ -12,6 +12,10 @@ public class Main {
        // System.out.println(Arrays.toString(numbers));
 
         Array arr= new Array(3);
+        arr.insert(40);
+        arr.insert(20);
+        arr.insert(60);
+        arr.insert(80);
         arr.print();
     }
 }
