@@ -6,6 +6,7 @@ public class Array {
 
     //constructor
     public Array(int length){
+
         items=new int[length]; //initialization
     }
 
@@ -53,6 +54,15 @@ public class Array {
 
         return -1;
 
+    }
+
+    public int max(){
+        int max=0;
+        for (int i=0; i<count; i++)
+            if (items[i]> max){
+                max=items[i];
+            }
+        return max;
     }
 
 }
