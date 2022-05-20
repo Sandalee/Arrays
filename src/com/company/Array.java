@@ -78,4 +78,12 @@ public class Array {
 
     }
 
+    public void insertAt(int index, int num){
+        //int number = num;
+        //int ind=index;
+
+        items[index]=num;
+        System.out.println(Arrays.toString(items));
+    }
+
 }

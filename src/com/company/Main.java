@@ -17,6 +17,8 @@ public class Main {
         arr.insert(60);
         System.out.println("max: "+ arr.max());
         arr.reverse();
+        arr.insertAt(0,50);
+        arr.reverse();
         //arr.print();
     }
 }
