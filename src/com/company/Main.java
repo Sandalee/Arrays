@@ -15,10 +15,8 @@ public class Main {
         arr.insert(100);
         arr.insert(90);
         arr.insert(60);
-        arr.insert(80);
-        //System.out.println(arr.indexOf(20));
-        //arr.removeAt(3);
         System.out.println("max: "+ arr.max());
+        arr.reverse();
         //arr.print();
     }
 }

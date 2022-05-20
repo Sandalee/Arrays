@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Array {
     private int[] items; //only visible to the class
     private int count; //to keep track of the length
@@ -63,6 +65,17 @@ public class Array {
                 max=items[i];
             }
         return max;
+    }
+
+    public void reverse(){
+        for (int i=0; i <count/2; i++) {
+            int temp = items[i];
+            items[i]=items[count-1-i];
+            items[count-1-i]=temp;
+        }
+        System.out.println(Arrays.toString(items));
+
+
     }
 
 }
